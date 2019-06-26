@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'YXYPlayer_Example' do
+  pod 'YXYPlayer', :path => '../'
+
+  target 'YXYPlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
