@@ -23,6 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		A40FA1A022C34F700002470F /* YXYPlayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A40FA19F22C34F700002470F /* YXYPlayerControl.m */; };
+		A40FA1A322C356900002470F /* YXYPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A40FA1A222C356900002470F /* YXYPlayerModel.m */; };
 		DBA6CE01B511C499F483CA48 /* Pods_YXYPlayer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A2D0AAE3EA20FF4FF3B532 /* Pods_YXYPlayer_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		35A76CA4F1B4D166A474F646 /* Pods-YXYPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXYPlayer_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YXYPlayer_Tests/Pods-YXYPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3E43447FDEDB8AC3B95D0843 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3E43447FDEDB8AC3B95D0843 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5899F045D2583B9C081E9DB9 /* Pods-YXYPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXYPlayer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXYPlayer_Example/Pods-YXYPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YXYPlayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXYPlayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +65,12 @@
 		778CC3754F4CB1917C527882 /* Pods-YXYPlayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXYPlayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YXYPlayer_Example/Pods-YXYPlayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		86A2D0AAE3EA20FF4FF3B532 /* Pods_YXYPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXYPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A6DF9000CC974D7CB98BC2A8 /* YXYPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YXYPlayer.podspec; path = ../YXYPlayer.podspec; sourceTree = "<group>"; };
-		A6EEA5B39CAB9595BC89AF44 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A40FA19E22C34F700002470F /* YXYPlayerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXYPlayerControl.h; sourceTree = "<group>"; };
+		A40FA19F22C34F700002470F /* YXYPlayerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXYPlayerControl.m; sourceTree = "<group>"; };
+		A40FA1A122C356900002470F /* YXYPlayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXYPlayerModel.h; sourceTree = "<group>"; };
+		A40FA1A222C356900002470F /* YXYPlayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXYPlayerModel.m; sourceTree = "<group>"; };
+		A6DF9000CC974D7CB98BC2A8 /* YXYPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YXYPlayer.podspec; path = ../YXYPlayer.podspec; sourceTree = "<group>"; };
+		A6EEA5B39CAB9595BC89AF44 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AFF8A3CC76E1E7B8CEC76499 /* Pods_YXYPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXYPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868E13A30A7B5A670378002 /* Pods-YXYPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXYPlayer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXYPlayer_Tests/Pods-YXYPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +138,7 @@
 		6003F593195388D20070C39A /* Example for YXYPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				A40FA19D22C34F510002470F /* PlayerControl */,
 				6003F59C195388D20070C39A /* YXYAppDelegate.h */,
 				6003F59D195388D20070C39A /* YXYAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -194,6 +201,17 @@
 				F868E13A30A7B5A670378002 /* Pods-YXYPlayer_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A40FA19D22C34F510002470F /* PlayerControl */ = {
+			isa = PBXGroup;
+			children = (
+				A40FA19E22C34F700002470F /* YXYPlayerControl.h */,
+				A40FA19F22C34F700002470F /* YXYPlayerControl.m */,
+				A40FA1A122C356900002470F /* YXYPlayerModel.h */,
+				A40FA1A222C356900002470F /* YXYPlayerModel.m */,
+			);
+			path = PlayerControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,11 +337,25 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YXYPlayer_Example/Pods-YXYPlayer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YXYBaseViewController/YXYBaseViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/YXYPlayer/YXYPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YXYBaseViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YXYPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -356,8 +388,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* YXYAppDelegate.m in Sources */,
+				A40FA1A022C34F700002470F /* YXYPlayerControl.m in Sources */,
 				6003F5A7195388D20070C39A /* YXYViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A40FA1A322C356900002470F /* YXYPlayerModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

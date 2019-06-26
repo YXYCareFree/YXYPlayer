@@ -1,0 +1,27 @@
+{
+  "name": "YXYPlayer",
+  "version": "0.1.0",
+  "summary": "A short description of YXYPlayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/YXYCareFree/YXYPlayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "YXYCareFree": "576842121@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/YXYCareFree/YXYPlayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YXYPlayer/Classes/**/*",
+  "dependencies": {
+    "YXYBaseViewController": [
+
+    ]
+  }
+}

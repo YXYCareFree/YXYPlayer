@@ -1,0 +1,6 @@
+framework module YXYPlayer {
+  umbrella header "YXYPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}
