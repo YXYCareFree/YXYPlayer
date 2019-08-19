@@ -12,6 +12,18 @@
 
 #define KWeakSelf __weak typeof(self) weakSelf =self
 
+
+#define NowTime \
+({\
+NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];\
+[dateFormatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"];\
+([dateFormatter stringFromDate:[NSDate date]]);\
+})\
+
+#define NSLog(format, ...) do {                                           \
+fprintf(stderr,"[%s] <%s:%d> %s\t%s\n\n", [NowTime UTF8String], [[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, __FUNCTION__, [[NSString stringWithFormat:format, ##__VA_ARGS__] UTF8String]);                                                       \
+} while (0)
+
 @interface YXYPlayer ()
 
 @property (nonatomic, strong) AVPlayer *player;
@@ -207,6 +219,8 @@
         if (@available(iOS 10.0, *)) {
             if (self.player.timeControlStatus == AVPlayerTimeControlStatusPlaying) {
                 self.playing = YES;
+                NSLog(@"播放了");
+                self.lblLoading.hidden = YES;
                 if (self.YXYPlayerStatusBlock) {
                     self.YXYPlayerStatusBlock(YXYPlayerStatusPlay);
                 }
@@ -237,7 +251,6 @@
                     self.playerTimeObserver = [self.player addPeriodicTimeObserverForInterval:CMTimeMake(1.0, 1.0) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
 //                        NSLog(@"curr=%f", CMTimeGetSeconds(time));
                         if (!weakSelf.panGesturing) {
-//                            NSLog(@"curr=%f", CMTimeGetSeconds(time));
                             weakSelf.currentPlayTime = CMTimeGetSeconds(time);
                         }
                         if (weakSelf.ProgressBlock) {
@@ -269,7 +282,7 @@
         }
         if ([keyPath isEqualToString:@"playbackBufferEmpty"]) {
             self.lblLoading.hidden = NO;
-//            NSLog(@"正在缓冲");
+            NSLog(@"正在缓冲");
             if (self.YXYPlayerStatusBlock) {
                 self.YXYPlayerStatusBlock(YXYPlayerStatusBuffering);
             }
@@ -278,13 +291,15 @@
             }
         }
         if ([keyPath isEqualToString:@"playbackLikelyToKeepUp"]) {
-            self.lblLoading.hidden = YES;
-//            NSLog(@"缓冲完成");
-            if (self.YXYPlayerStatusBlock) {
-                self.YXYPlayerStatusBlock(YXYPlayerStatusBufferEnd);
-            }
-            if (self.control && [self.control respondsToSelector:@selector(playerStatus:)]) {
-                [self.control playerStatus:YXYPlayerStatusBufferEnd];
+            if (change[NSKeyValueChangeNewKey] == 1) {
+                self.lblLoading.hidden = YES;
+                NSLog(@"缓冲完成");
+                if (self.YXYPlayerStatusBlock) {
+                    self.YXYPlayerStatusBlock(YXYPlayerStatusBufferEnd);
+                }
+                if (self.control && [self.control respondsToSelector:@selector(playerStatus:)]) {
+                    [self.control playerStatus:YXYPlayerStatusBufferEnd];
+                }
             }
         }
     }
@@ -329,7 +344,6 @@
         _lblLoading.text = @"加载中...";
         _lblLoading.font = [UIFont systemFontOfSize:12];
         _lblLoading.textColor = UIColor.whiteColor;
-//        _lblLoading.hidden = YES;
     }
     return _lblLoading;
 }
