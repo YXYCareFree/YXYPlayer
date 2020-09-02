@@ -69,7 +69,7 @@
 		A40FA19F22C34F700002470F /* YXYPlayerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXYPlayerControl.m; sourceTree = "<group>"; };
 		A40FA1A122C356900002470F /* YXYPlayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXYPlayerModel.h; sourceTree = "<group>"; };
 		A40FA1A222C356900002470F /* YXYPlayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXYPlayerModel.m; sourceTree = "<group>"; };
-		A6DF9000CC974D7CB98BC2A8 /* YXYPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YXYPlayer.podspec; path = ../YXYPlayer.podspec; sourceTree = "<group>"; };
+		A6DF9000CC974D7CB98BC2A8 /* YXYPlayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YXYPlayer.podspec; path = ../YXYPlayer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6EEA5B39CAB9595BC89AF44 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AFF8A3CC76E1E7B8CEC76499 /* Pods_YXYPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXYPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F868E13A30A7B5A670378002 /* Pods-YXYPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YXYPlayer_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YXYPlayer_Tests/Pods-YXYPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -275,6 +275,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
